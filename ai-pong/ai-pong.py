@@ -48,7 +48,7 @@ def moveBall(ball, ballDirX, ballDirY):
     return ball
 
 #Checks for a collision with a wall, and 'bounces' ball off it.
-#Returns new direction
+#Returns new direction!
 def checkEdgeCollision(ball, ballDirX, ballDirY):
     if ball.top == (LINETHICKNESS) or ball.bottom == (WINDOWHEIGHT - LINETHICKNESS):
         ballDirY = ballDirY * -1
